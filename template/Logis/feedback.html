@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -29,4 +29,67 @@
 	</div>
 	<script src="assets/css/feed.js"></script>
 </body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+	<link href="assets/css/feedbackstyle.css" rel="stylesheet"> 
+	<title>FEEDBACK FORM</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        
+        <form id="feedbackForm">
+            <!-- Your form content here -->
+			<div class="wrapper">
+				<h3>WRITE YOUR FEEDBACK HERE.</h3>
+				<form action="#">
+					<div class="rating">
+						<input type="number" name="rating" hidden>
+						<i class='bx bx-star star' style="--i: 0;"></i>
+						<i class='bx bx-star star' style="--i: 1;"></i>
+						<i class='bx bx-star star' style="--i: 2;"></i>
+						<i class='bx bx-star star' style="--i: 3;"></i>
+						<i class='bx bx-star star' style="--i: 4;"></i>
+					</div>
+					<textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..."></textarea>
+					<div class="btn-group">
+						<button type="submit" class="btn submit">Submit</button>
+						<button class="btn cancel">Cancel</button>
+					</div>
+				</form>
+			</div>
+        </form>
+    </div>
+
+    <!-- Import Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore.js"></script>
+
+    <!-- Your Firebase configuration -->
+    <script>
+        // Initialize Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyDEWizSHweYkjg51Q7xUCl1-Y3WQkBRVLI-Y3WQkBRVLI",
+            authDomain: "rapidrepairs-4.firebaseapp.com",
+            projectId: "rapidrepairs-4",
+            storageBucket: "rapidrepairs-4.appspot.com",
+            messagingSenderId: "567460102691",
+            appId: "1:567460102691:web:8b542dcc39b923a2926796"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- Your custom JavaScript file -->
+    <script src="assets/js/feed.js"></script>
+</body>
 </html>
+
+
+
+
+
